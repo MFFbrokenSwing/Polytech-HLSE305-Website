@@ -1,0 +1,93 @@
+@closed-width: 3em;
+@opened-width: 10em;
+@submenu-offset: 0.5em;
+
+@import '../font/fontello/css/fontello.css';
+
+.closed
+{
+    width: @closed-width;
+    .nav-link
+    {
+        padding-left: 1em;
+        transition: padding-left 0.7s;
+    }
+}
+
+.opened
+{
+    width: @opened-width;
+    .nav-link
+    {
+        padding-left: 0.2em;
+        transition: padding-left 0.7s;
+    }
+}
+
+.nav-link
+{
+    display: inline;
+}
+
+.side-menu
+{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    overflow-x: hidden;
+
+    a
+    {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        color: black;
+    }
+}
+
+#submenu
+{
+    .side-menu();
+    z-index: 1;
+    width: @opened-width + @submenu-offset;
+    background-color: #dfdfdf;
+    
+    a
+    {
+        margin-left: @closed-width + @submenu-offset;
+    }
+}
+
+#nav:hover
+{
+    .opened();
+}
+
+#nav {
+    .side-menu();
+    .closed();
+    z-index: 2;
+    background-color: rgb(256, 256, 256);
+    transition: 0.5s;
+}
+
+#nav a {
+    font-size: 1.1em;
+    display: block;
+    transition: 0.3s;
+}
+
+.current
+{
+    background-color: #dfdfdf;
+}
+
+#nav a:hover {
+    background-color: #dfdfdf;
+}
+
+#main {
+    margin-left: @opened-width + @submenu-offset;
+}
