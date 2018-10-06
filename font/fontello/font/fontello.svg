@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="cancel" unicode="&#xe800;" d="M724 112q0-22-15-38l-76-76q-16-15-38-15t-38 15l-164 165-164-165q-16-15-38-15t-38 15l-76 76q-16 16-16 38t16 38l164 164-164 164q-16 16-16 38t16 38l76 76q16 16 38 16t38-16l164-164 164 164q16 16 38 16t38-16l76-76q15-15 15-38t-15-38l-164-164 164-164q15-15 15-38z" horiz-adv-x="785.7" />
+
+<glyph glyph-name="menu" unicode="&#xf0c9;" d="M857 100v-71q0-15-10-25t-26-11h-785q-15 0-25 11t-11 25v71q0 15 11 25t25 11h785q15 0 26-11t10-25z m0 286v-72q0-14-10-25t-26-10h-785q-15 0-25 10t-11 25v72q0 14 11 25t25 10h785q15 0 26-10t10-25z m0 285v-71q0-14-10-25t-26-11h-785q-15 0-25 11t-11 25v71q0 15 11 26t25 10h785q15 0 26-10t10-26z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="angle-circled-left" unicode="&#xf137;" d="M507 72l57 57q11 10 11 25t-11 25l-171 171 171 171q11 11 11 25t-11 26l-57 57q-10 10-25 10t-25-10l-253-254q-11-10-11-25t11-25l253-253q11-11 25-11t25 11z m350 278q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="angle-circled-right" unicode="&#xf138;" d="M400 72l254 253q10 11 10 25t-10 25l-254 254q-10 10-25 10t-25-10l-57-57q-11-11-11-26t11-25l171-171-171-171q-11-11-11-25t11-25l57-57q11-11 25-11t25 11z m457 278q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="angle-circled-up" unicode="&#xf139;" d="M650 214l57 57q11 11 11 25t-11 26l-253 253q-11 11-25 11t-25-11l-254-253q-10-11-10-26t10-25l57-57q11-10 25-10t25 10l172 172 171-172q11-10 25-10t25 10z m207 136q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="angle-circled-down" unicode="&#xf13a;" d="M454 125l253 254q11 10 11 25t-11 25l-57 57q-10 10-25 10t-25-10l-171-172-172 172q-10 10-25 10t-25-10l-57-57q-10-11-10-25t10-25l254-254q10-10 25-10t25 10z m403 225q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>
