@@ -1,32 +1,56 @@
 @closed-width: 3em;
 @opened-width: 10em;
 @submenu-offset: 0.5em;
+@submenu-bg-color: rgb(194, 194, 194);
+@menu-bg-color: rgb(219, 219, 219);
+@main-bg-color: rgb(242, 242, 242);
 
 @import '../font/fontello/css/fontello.css';
 
-.closed
-{
-    width: @closed-width;
-    .nav-link
+// Side-way navigation style
+#nav {
+    // Sets the position and link style
+    .side-menu();
+    z-index: 2;
+    background-color: @menu-bg-color;
+    transition: 0.5s;
+
+    div
     {
-        padding-left: 1em;
-        transition: padding-left 0.7s;
+        display: inline;
+    }
+
+    // Values for closed nav
+    #navigation-control.close();
+
+    // Values for opened nav
+    &:hover
+    {
+        #navigation-control.open();
     }
 }
 
-.opened
+#navigation-control()
 {
-    width: @opened-width;
-    .nav-link
+    .open
     {
-        padding-left: 0.2em;
-        transition: padding-left 0.7s;
+        width: @opened-width;
+        div
+        {
+            padding-left: 0.2em;
+            transition: padding-left 0.7s;
+        }
     }
-}
 
-.nav-link
-{
-    display: inline;
+    .close
+    {
+        width: @closed-width;
+        div
+        {
+            padding-left: 1em;
+            transition: padding-left 0.7s;
+        }
+    }
 }
 
 .side-menu
@@ -44,6 +68,7 @@
         display: block;
         padding: 0.5em 0.5em 0.5em 0.5em;
         color: black;
+        font-size: 1.1em;
     }
 }
 
@@ -52,42 +77,34 @@
     .side-menu();
     z-index: 1;
     width: @opened-width + @submenu-offset;
-    background-color: #dfdfdf;
+    background-color: @submenu-bg-color;
     
     a
     {
-        margin-left: @closed-width + @submenu-offset;
+        padding-left: @closed-width + @submenu-offset;
     }
 }
 
-#nav:hover
-{
-    .opened();
-}
-
-#nav {
-    .side-menu();
-    .closed();
-    z-index: 2;
-    background-color: rgb(256, 256, 256);
-    transition: 0.5s;
-}
-
 #nav a {
-    font-size: 1.1em;
-    display: block;
     transition: 0.3s;
 }
 
-.current
+#nav .current, #nav a:hover
 {
-    background-color: #dfdfdf;
+    background-color: @submenu-bg-color;
 }
 
-#nav a:hover {
-    background-color: #dfdfdf;
+#submenu .current, #submenu a:hover
+{
+    background-color: @main-bg-color;
 }
 
-#main {
+#main 
+{
     margin-left: @opened-width + @submenu-offset;
+}
+
+body
+{
+    background-color: @main-bg-color;
 }
