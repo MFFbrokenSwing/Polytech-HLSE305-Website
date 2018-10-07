@@ -25,10 +25,8 @@ function setCurrentPart()
 
     for(var i = titles.length - 1; i >= 0; i--)
     {
-        console.log(titles[i].innerText + ' ' + titles[i].offsetTop + "/" + window.scrollY);
         if(titles[i].offsetTop <= window.scrollY)
         {
-            console.log('Found');
             let el = document.querySelector('#nav a[href="#' + titles[i].getAttribute('id') + '"]');
             if(el != null)
             {
