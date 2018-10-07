@@ -6,6 +6,8 @@
 @main-bg-color: rgb(242, 242, 242);
 @menu-speed: 0.3s;
 @text-speed: 0.5s;
+@menu-border: 0.25em;
+@menu-top-padding: 4em;
 
 @import '../font/fontello/css/fontello.css';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
@@ -17,7 +19,7 @@
     z-index: 2;
     background-color: @menu-bg-color;
     transition: @menu-speed;
-    border-top: solid 0.25em red;
+    border-top: solid @menu-border red;
 
     div
     {
@@ -63,7 +65,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 60px;
+    padding-top: @menu-top-padding;
     overflow-x: hidden;
 
     a
@@ -82,6 +84,7 @@
     z-index: 1;
     width: @opened-width + @submenu-offset;
     background-color: @submenu-bg-color;
+    padding-top: @menu-top-padding + @menu-border;
     
     a
     {
