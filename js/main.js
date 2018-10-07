@@ -14,6 +14,12 @@ window.addEventListener('load', function(e) {
             title.setAttribute('href', '#');
         }
         link.innerHTML = '<div>' + title.innerText + '</div>';
+        link.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            title.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
         nav.appendChild(link);
     });
 });
@@ -49,6 +55,12 @@ function setCurrentPart()
             let link = document.createElement('a');
             link.setAttribute('href', '#' + section.getAttribute('id'));
             link.innerHTML = section.innerText;
+            link.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
             submenu.appendChild(link);
         });
 
