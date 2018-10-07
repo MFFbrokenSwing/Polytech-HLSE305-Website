@@ -1,7 +1,11 @@
+/**
+ * Populates the main menu with the links to the main sections.
+ */
 window.addEventListener('load', function(e) {
     let nav = document.getElementById('nav');
     let titles = this.document.querySelectorAll('h2');
 
+    // For each h2 we create a link in the nav
     titles.forEach(title => {
         let link = document.createElement('a');
         link.classList.add('icon-angle-circled-right');
@@ -24,6 +28,10 @@ window.addEventListener('load', function(e) {
     });
 });
 
+/**
+ * This function checks the window's scrollY to determine which section is focused.
+ * It also populates the submenu with the subsections of the focused main section.
+ */
 function setCurrentPart()
 {
     // Main section
