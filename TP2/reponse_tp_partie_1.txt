@@ -1,0 +1,5 @@
+La largeur par défaut d'une division correspond à toute la largeur de la page. Sa hauteur quand à elle correspond à la hauteur minimum nécessaire pour afficher le texte de la division.
+Lors du redimenssionement d'une page, la hauteur et la largeur des divisions varient.
+La marge par défaut à gauche et à droite de la division est de 0.5 em.
+Je constate que la bordure se comporte comme une marge extérieur
+Lorsqu'on rajoute des balises "p" autour des paragraphe, ces derniers sont écartés du reste du contenu par une marge appliquée automatiquement

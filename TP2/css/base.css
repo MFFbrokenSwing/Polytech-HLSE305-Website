@@ -1,0 +1,26 @@
+body
+{
+	background-color: dimgray;
+}
+
+#part-one
+{
+	background-color: rgb(120, 120, 50);
+	padding: 3px 5px 3px 5px;
+}
+#part-two
+{
+	background-color: rgb(120, 50, 120);
+	padding: 3px 5px 3px 5px;
+}
+#part-three
+{
+	background-color: rgb(50, 120, 120);
+	padding: 3px 5px 3px 5px;
+	border: solid black 2px;
+}
+#part-four
+{
+	background-color: rgb(160, 20, 50);
+	padding: 3px 5px 3px 5px;
+}

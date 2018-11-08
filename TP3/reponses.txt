@@ -1,0 +1,16 @@
+quel est l'effet de la touche du clavier Inser (ou Ins) pendant la saisie de texte ?
+    La touche Inser permet de changer le mode de saisie : soit notre saisie est insérée dans la ligne, soit elle remplace le caractère suivant le curseur.
+
+quelle est la différence entre passer à la ligne par la touche Entrée et par la combinaison de touches Maj+Entrée ?
+    La tonche Entrée créer un nouveau paragraphe tandis que la combinaison Maj+Entrée effectue seulement un retour à la ligne
+
+- à quoi sert l'espace « insécable » inséré par la combinaison de touches Maj+Ctrl+Espace ?
+    Je ne sais pas
+
+Quelle option doit-on cocher pour éviter d'avoir une « canichene » ? A quoi sert l'option
+« Respecter la casse » ?
+    Il faut cocher "Mot entier". "Respecter la casse" permet de différencier les majuscules et les minuscules
+
+En faisant un clic droit sur l'image de la formule, choisir de l'ancrer comme un caractère. A quoi
+cela sert-il ?
+    Sela permet d'insérer l'image dans un paragraphe
