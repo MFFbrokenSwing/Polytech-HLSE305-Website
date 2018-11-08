@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet/less" type="text/css" href="less/main.less" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
     <script src="js/main.js"></script>
+
+    <!-- Less "on-the-fly" compiler -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+
+    <!-- Highlight JS script and style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 
     <title>Page Title</title>
 </head>
@@ -15,7 +21,7 @@
     <nav id="nav">
 
     </nav>
-
+    <a href="#" class="icon-angle-circled-up quick-top" target="_top"></a>
     <div id="main">
         <aside id="submenu">
 
@@ -32,6 +38,28 @@
             Vestibulum ullamcorper feugiat orci at congue. In et enim arcu. Fusce eu ultricies nisi. Sed venenatis urna sit amet 
             rhoncus pretium. Pellentesque in tellus ac purus vehicula tincidunt. 
         </p>
+        <pre>
+            <code class="JSON">
+{
+    "Moi": "toi",
+    "Lui": [
+        "Nous",
+        "Vous",
+        "Eux"
+    ],
+    "Quoi ?": false,
+    "Nombre" : 5
+}
+            </code>
+        </pre>
+        <pre>
+            <code class="Java">
+public static int foo(int bar)
+{
+    return bar;
+}
+            </code>
+        </pre>
         <h3 id="tp1-part2">Partie 2</h3>
         <p>
             Cras id sodales purus. Suspendisse quis varius augue. Fusce eget sodales nisl. Curabitur tempus imperdiet nibh quis 
@@ -74,6 +102,10 @@
             ante tristique, pellentesque nulla. Vestibulum mattis at nulla in mollis. Pellentesque ut convallis enim. Nunc 
             rhoncus dui a libero pretium varius. 
         </p>
+        <footer>
+            Copyright Florent HUGOUVIEUX
+        </footer>
     </div>
 </body>
+<script>hljs.initHighlightingOnLoad();</script>
 </html>

@@ -132,6 +132,28 @@
 
 body
 {
+    background-image: url("../img/bg.png");
+    background-size: 250px;
     background-color: @main-bg-color;
     font-family: 'Ubuntu', 'Times New Roman', Times, serif
+}
+
+footer
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.quick-top
+{
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+    &:hover
+    {
+        opacity: 1;
+    }
 }
