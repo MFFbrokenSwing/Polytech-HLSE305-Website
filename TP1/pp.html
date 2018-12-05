@@ -3,13 +3,30 @@
 <head>
 	<title>Ma Première Page </title>
 	<meta charset="utf-8">
+	
+	<link rel="stylesheet/less" type="text/css" href="../less/menu.less" />
+	<link rel="stylesheet/less" type="text/css" href="../less/core.less" />
+
+	<script src="../js/main.js"></script>
+
+    <!-- Less "on-the-fly" compiler -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+	
+
 </head>
 
 <body>
+	<nav id="nav">
+		<a href="../index.html" class="icon-angle-circled-right"><div>Page d'accueil</div></a>
+		<a href="pp.html" class="current icon-angle-circled-right"><div>Page personnelle</div></a>
+	</nav>
 	<div id="main" style="background-color: #FF0000; color: white;">
+		<aside id="submenu">
+            <!-- Filled with JavaScript -->
+        </aside>
 		<h2>Page Personnelle</h2>
 		<p>
-			Soyez les bienvenus sur la page de <em> moi-même</em>.
+			Soyez les bienvenus sur la page de <em>moi-même</em>.
 		</p>
 
 		<p>
@@ -62,11 +79,11 @@
 
 	 
 		<p>
-			Page Composée par <cite>moi-m?e</cite>.
+			Page Composée par <cite>moi-même</cite>.
 		</p><br/>
 
 		<p>
-			Vous pouvez m'écrire ?<a href="mailto:florent.hugouvieux@etu.umontpellier.fr">cette adresse</a>.
+			Vous pouvez m'écrire à <a href="mailto:florent.hugouvieux@etu.umontpellier.fr">cette adresse</a>.
 		</p> 
 		<h6>&copy;2015</h6>
 	</div>
