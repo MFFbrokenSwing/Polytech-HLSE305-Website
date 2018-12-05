@@ -4,7 +4,7 @@
 @submenu-bg-color: rgb(194, 194, 194);
 @menu-bg-color: rgb(219, 219, 219);
 @menu-speed: 0.3s;
-@text-speed: 0.5s;
+@text-speed: 0.3s;
 @menu-border: 0.25em;
 @menu-top-padding: 4em;
 
@@ -12,6 +12,7 @@
 #nav {
     // Sets the position and link style
     .side-menu();
+    white-space: nowrap;
     z-index: 2;
     background-color: @menu-bg-color;
     transition: @menu-speed;
@@ -49,7 +50,7 @@
         width: @closed-width;
         div
         {
-            padding-left: 1em;
+            padding-left: 1.5em;
             transition: padding-left @text-speed;
         }
     }
@@ -70,7 +71,7 @@
         display: block;
         padding: 0.5em 0.5em 0.5em 0.5em;
         color: black;
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 }
 
