@@ -1,0 +1,2 @@
+Exercice 1:
+    2- L'image a disparue car le lien ne pointe plus vers le bon emplacement (vu que l'on a renommé l'image)
