@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/css" href="../less/menu.less">
+    <link rel="stylesheet/less" type="text/css" href="../less/index.less">
+    <link rel="stylesheet/less" type="text/css" href="../less/questions.less">
+
+    <!-- Less "on-the-fly" compiler -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <nav id="nav">
+
+    </nav>
+    <div id="main">
+        <aside id="submenu">
+            <!-- Filled with JavaScript -->
+        </aside>
+        <h1>Cette page résume le travail effectué dans le TP1</h1>
+        <h2 id="reponses">Réponses</h2>
+        <p>
+            Voici les réponses aux questions se trouvant dans le TP1
+        </p>
+        <div class="questions">
+            <h4>A quoi sert la commande "tree" ? Quel est l'effet du paramètre -d ?</h4>
+            <p>
+                La commande « tree » affiche l’arborescence du dossier courant ainsi que des sous dossiers de celui-ci. 
+                L’ajout du paramètre « -d » permet de n’afficher que les dossiers et le paramètre « -a » sert à afficher tous 
+                les fichiers/dossiers (même ceux cachés).
+            </p>
+
+            <h4>A quoi sert la commande cd ? Et pwd ? A quoi fait référence '..' ?</h4>
+            <p>
+                La commande « cd » permet de changer de dossier (littéralement « change directory » en anglais). 
+                Elle est suivit du chemin du dossier dans lequel nous voulons nous rendre. La commande « pwd » quand à
+                elle affiche le chemin du dossier courant. Les « .. » servent à faire référence au dossier parent du dossier 
+                courant.
+            </p>
+
+            <h4>A quoi sert le commande ls ? Quel est l'effet du paramètre -a ?</h4>
+            <p>
+                    La commande « ls » permet de lister le contenu d’un dossier (celui du dossier courant si rien n’est indiqué). 
+                    Le paramètre « -a » permet de lister tous les dossiers/fichiers (y compris ceux cachés).
+            </p>
+
+            <h4>Qu'à fait la commande que vous venez de taper ? Quel est l'avantage d'une telle commande ? Comment les supprimer ?</h4>
+            <p>
+                    Nous venons de créer 5 * 5 = 25 dossiers nommés suivant les spécifications indiquées dans la commande. 
+                    Ils nous aurait fallu beaucoup plus de temps pour le faire depuis l’interface graphique  (~ 1 minute). 
+                    Pour supprimer ces dossiers on remplace « mkdir » par « rm -d » dans la commande.
+            </p>
+
+            <h4>Quelle commande faut-il taper pour retrouver un fichier commençant par la lettre « a » et n'ayant pas la lettre « e » ?</h4>
+            <p>
+                Il faudrait taper la commande « find ~ a* | grep -v e ».
+            </p>
+
+            <h4>A quoi sert la commande more ?</h4>
+            <p>
+                La commande « more » permet d’afficher un gros texte dans la console en l’affichant partie par partie.
+            </p>
+
+            <h4>Existe-t-il une différence entre &lt;br&gt; et &lt;BR&gt; ?</h4>
+            <p>
+                Non, la casse n’a pas d’importance pour ce qui est des balises.
+            </p>
+
+            <h4>Que retrouve-t-on entre les balise title ?</h4>
+            <p>
+                Ce qui est inscrit dans les balises « title » se retrouve dans le nom de l’onglet de la page. 
+            </p>
+
+            <h4>A quoi sert la balise br ?</h4>
+            <p>
+                La balise « br » permet de faire un retour à la ligne.
+            </p>
+
+            <h4>Que retrouve--on dans les marquers &lt;! ... &gt; ?</h4>
+            <p>
+                La balise « &lt;! … &gt; » permet d’ajouter des commentaires au code source de la page.
+            </p>
+
+            <h4>A quoi correspond '& copy;' ?</h4>
+            <p>
+                L’entité html « & copy » permet d’afficher le sigle du copyright.
+            </p>
+
+            <h4>Enlever la fermeture des balises html, head et body a-t-il un effet ?</h4>
+            <p>
+                Enlever la fermeture de balises ne change pas l’affichage, à part si cette balises possède un impact sur le-dit affichage.
+            </p>
+
+            <h4>Enlever les marqueurs ouvrants correspondants aux marqueurs fermants précédents: cela
+                change-t-il l'affichage de la page sur le navigateur?</h4>
+            <p>
+                Non.
+            </p>
+
+            <h4>Enlever à présent le marqueur &lt;/h4&gt;: comment l'affichage est-il modifié? Jusqu'où s'étend
+                cette modification?</h4>
+            <p>
+                La modification s’étend jusqu’à la fin de la page.
+            </p>
+
+            <h4>À quelle structure correspond le marqueur &lt;p&gt; ?</h4>
+            <p>
+                La balise « p » correspond au paragraphe. Je constate que le texte s’ajuste automatique à la largeur de l’écran.
+            </p>
+
+            <h4>Modifiez avec la souris la largeur de la fenêtre du navigateur: que constatez-vous ?</h4>
+            <p>
+                Je constate que le texte s’ajuste automatique à la largeur de l’écran.
+            </p>
+
+            <h4>Quelle est, par défaut, la largeur du tableau ?</h4>
+            <p>
+                Par défaut, la largeur du tableau est égale à la largeur du texte qu’il contient.
+            </p>
+
+            <h4>Quelles sont les deux caractéristiques du contenu des cases th?</h4>
+            <p>
+                Les cases « th » contiennent les titres des colonnes, elle sont mise en avant par défaut par le navigateur.
+            </p>
+
+            <h4>Que se passe-t-il si on enlève les caractères &nbsp; dans la première case du tableau? À quoi correspondent-ils?</h4>
+            <p>
+                Cela ne change rien, l’entité html « & nbsp » correspond à un espace.
+            </p>
+
+        </div>
+        <h2 id="documents">Documents</h2>
+        <p>
+            Vous trouverez ci-dessous tous les documents réalisés durant ce TP :
+            <ul>
+                <li><a href="exemples_tp3.odt">exemples_tp3.odt</a></li>
+                <li><a href="texte.odt">teste.odt</a></li>
+                <li><a href="texte.pdf">texte.pdf</a></li>
+                <li><a href="texte.tex">texte.tex</a></li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>
