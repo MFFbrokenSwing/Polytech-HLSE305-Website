@@ -5,7 +5,7 @@ quelle est la différence entre passer à la ligne par la touche Entrée et par 
     La tonche Entrée créer un nouveau paragraphe tandis que la combinaison Maj+Entrée effectue seulement un retour à la ligne
 
 - à quoi sert l'espace « insécable » inséré par la combinaison de touches Maj+Ctrl+Espace ?
-    Je ne sais pas
+    Cela sert à ce que les deux mots séparés par cette espace ne puisse pas être séparés en fin de ligne.
 
 Quelle option doit-on cocher pour éviter d'avoir une « canichene » ? A quoi sert l'option
 « Respecter la casse » ?
