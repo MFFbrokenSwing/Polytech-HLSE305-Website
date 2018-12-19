@@ -1,0 +1,128 @@
+#nav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 4em;
+  overflow-x: hidden;
+  white-space: nowrap;
+  z-index: 2;
+  background-color: #dbdbdb;
+  transition: 0.3s;
+  border-top: solid 0.25em red;
+  width: 3em;
+}
+#nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: black;
+  font-size: 0.9em;
+}
+#nav a div {
+  padding-left: 1.5em;
+  display: inline;
+  transition: padding-left 0.3s;
+}
+#nav:hover {
+  width: 10em;
+}
+#nav:hover a div {
+  padding-left: 0.2em;
+  display: inline;
+  transition: padding-left 0.3s;
+}
+/*
+    Sets the menu taking the full height and being fixed to the left of the screen.
+    Also sets links in the menu a custom style and setting them a padding
+*/
+.side-menu {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 4em;
+  overflow-x: hidden;
+}
+.side-menu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: black;
+  font-size: 0.9em;
+}
+/****************************
+-----------------------------
+|        OFFSET STUFF       |
+-----------------------------
+*****************************/
+#submenu {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 4em;
+  overflow-x: hidden;
+  z-index: 1;
+  width: 10.5em;
+  background-color: #c2c2c2;
+  padding-top: 4.25em;
+}
+#submenu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: black;
+  font-size: 0.9em;
+}
+#submenu a {
+  padding-left: 3.5em;
+}
+#nav a {
+  transition: 0.3s;
+}
+/****************************
+-----------------------------
+|        COLOR STUFF        |
+-----------------------------
+*****************************/
+#nav .current,
+#nav a:hover {
+  background-color: #c2c2c2;
+}
+#submenu .current,
+#submenu a:hover {
+  background-color: #f2f2f2;
+}
+#main {
+  margin-left: 14.5em;
+}
+/*******************************
+--------------------------------
+|        CATEGORY STUFF        |
+--------------------------------
+********************************/
+/**
+    Just displays the content of a category when hovered (also switching the icon)
+*/
+.category .cat-content {
+  display: block;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+.category .cat-content a {
+  font-style: italic;
+}
+.category .cat-content a div {
+  color: #993300;
+}
+.category:hover .cat-title:before {
+  content: '\f13a';
+  font-family: 'fontello';
+}
+.category:hover .cat-content {
+  max-height: 500px;
+  display: block;
+}
