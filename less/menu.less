@@ -19,11 +19,6 @@
     transition: @menu-speed;
     border-top: solid @menu-border red;
 
-    div
-    {
-        display: inline;
-    }
-
     // Values for closed nav
     #navigation-control.close();
 
@@ -39,9 +34,10 @@
     .open
     {
         width: @opened-width;
-        div
+        a div
         {
             padding-left: 0.2em;
+            display: inline;
             transition: padding-left @text-speed;
         }
     }
@@ -49,14 +45,19 @@
     .close
     {
         width: @closed-width;
-        div
+        a div
         {
             padding-left: 1.5em;
+            display: inline;
             transition: padding-left @text-speed;
         }
     }
 }
 
+/*
+    Sets the menu taking the full height and being fixed to the left of the screen.
+    Also sets links in the menu a custom style and setting them a padding
+*/
 .side-menu
 {
     height: 100%;
@@ -76,6 +77,12 @@
     }
 }
 
+/****************************
+-----------------------------
+|        OFFSET STUFF       |
+-----------------------------
+*****************************/
+
 #submenu
 {
     .side-menu();
@@ -94,6 +101,12 @@
     transition: 0.3s;
 }
 
+/****************************
+-----------------------------
+|        COLOR STUFF        |
+-----------------------------
+*****************************/
+
 #nav .current, #nav a:hover
 {
     background-color: @submenu-bg-color;
@@ -104,7 +117,44 @@
     background-color: @submenu-link-hover-color;
 }
 
+
+// Setting an offset to the main content so it doesn't disappear under the menu
 #main 
 {
     margin-left: @opened-width + @submenu-offset + 4em;
+}
+
+/*******************************
+--------------------------------
+|        CATEGORY STUFF        |
+--------------------------------
+********************************/
+
+/**
+    Just displays the content of a category when hovered (also switching the icon)
+*/
+.category
+{
+    // When the category isn't hovered, the content should not be shown
+    .cat-content
+    {
+        display : none;
+    }
+
+    // When the category is hovered (especially the title), the content is shown
+    &:hover
+    {
+        // For style
+        .cat-title:before
+        {
+            content: '\f13a';
+            font-family: 'fontello';
+        }
+
+        // Displays the content
+        .cat-content
+        {
+            display : inline;
+        }
+    }
 }
