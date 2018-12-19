@@ -1,23 +1,72 @@
-@import '../font/fontello/css/fontello.css';
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+@import 'menu';
+@import 'core';
+
+#main {
+
+    h2
+    {
+        font-size: 3em;
+        .underscore-before();
+    }
+
+    h3
+    {
+        font-size: 2em;
+        color: red;
+        .underscore-before();
+    }
+
+    h4
+    {
+        font-size: 1em;
+    }
+
+    a
+    {
+        color: inherit;
+    }
 }
-footer {
-  text-align: right;
-  font-weight: bold;
+
+.underscore-before()
+{
+    &::before
+    {
+        content: '';
+        width: 0.3em;
+        border-bottom: solid 0.1em;
+        padding: 0.25em;
+    }
 }
-.quick-top {
-  position: fixed;
-  top: 2em;
-  right: 2em;
-  opacity: 0.5;
-  transition: opacity 0.5s;
-  color: black;
-  font-size: 2em;
+
+@main-bg-color: rgb(242, 242, 242);
+
+body
+{
+    background-image: url("../img/bg.png");
+    background-size: 250px;
+    background-color: @main-bg-color;
+    font-family: 'Ubuntu', 'Times New Roman', Times, serif
 }
-.quick-top:hover {
-  opacity: 1;
+
+legend
+{
+    font-style: italic;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+kbd
+{
+    background-color: black;
+    color: white;
+    border: solid black;
+    border-radius : 4px 4px 4px 4px;
+    font-size: 15px;
+}
+
+.git-logo
+{
+    float: left;
+    width: 200px;
+    margin-right: 2em;
 }
