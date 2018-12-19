@@ -138,7 +138,11 @@
     // When the category isn't hovered, the content should not be shown
     .cat-content
     {
-        display : none;
+        display: block;
+        max-height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 1s;
     }
 
     // When the category is hovered (especially the title), the content is shown
@@ -154,7 +158,8 @@
         // Displays the content
         .cat-content
         {
-            display : inline;
+            max-height: 500px;
+            display: block;
         }
     }
 }
