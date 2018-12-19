@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet/less" type="text/css" href="../less/menu.less">
+    <link rel="stylesheet/less" type="text/css" href="../less/index.less">
+    <link rel="stylesheet/less" type="text/css" href="../less/questions.less">
 
     <!-- Less "on-the-fly" compiler -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
@@ -13,41 +15,52 @@
 
     </nav>
     <div id="main">
-            <aside id="submenu">
-                <!-- Filled with JavaScript -->
-            </aside>
-            <h1>Cette page résume le travail effectué dans le TP3</h1>
-            <h2 id="reponses">Réponses</h2>
-            <p>
-                Voici les réponses aux questions se trouvant dans le TP3
-            </p>
-
-            <h3>Quel est l'effet de la touche du clavier Inser (ou Ins) pendant la saisie de texte ?</h3>
+        <aside id="submenu">
+            <!-- Filled with JavaScript -->
+        </aside>
+        <h1>Cette page résume le travail effectué dans le TP3</h1>
+        <h2 id="reponses">Réponses</h2>
+        <p>
+            Voici les réponses aux questions se trouvant dans le TP3
+        </p>
+        <div class="questions">
+            <h4>Quel est l'effet de la touche du clavier Inser (ou Ins) pendant la saisie de texte ?</h4>
             <p>
                     La touche Inser permet de changer le mode de saisie : soit notre saisie est insérée dans la ligne, 
                     soit elle remplace le caractère suivant le curseur.
             </p>
 
-            <h3>Quelle est la différence entre passer à la ligne par la touche Entrée et par la combinaison de touches Maj+Entrée ?</h3>
+            <h4>Quelle est la différence entre passer à la ligne par la touche Entrée et par la combinaison de touches Maj+Entrée ?</h4>
             <p>
                 La tonche Entrée créer un nouveau paragraphe tandis que la combinaison Maj+Entrée effectue seulement un retour 
                 à la ligne.
             </p>
 
-            <h3>A quoi sert l'espace « insécable » inséré par la combinaison de touches Maj+Ctrl+Espace ?</h3>
+            <h4>A quoi sert l'espace « insécable » inséré par la combinaison de touches Maj+Ctrl+Espace ?</h4>
             <p>
                 Cela sert à ce que les deux mots séparés par cette espace ne puisse pas être séparés en fin de ligne.
             </p>
 
-            <h3>Quelle option doit-on cocher pour éviter d'avoir une « canichene » ? A quoi sert l'option « Respecter la casse » ?</h3>
+            <h4>Quelle option doit-on cocher pour éviter d'avoir une « canichene » ? A quoi sert l'option « Respecter la casse » ?</h4>
             <p>
                 Il faut cocher "Mot entier". "Respecter la casse" permet de différencier les majuscules et les minuscules.
             </p>
 
-            <h3>En faisant un clic droit sur l'image de la formule, choisir de l'ancrer comme un caractère. A quoi cela sert-il ?</h3>
+            <h4>En faisant un clic droit sur l'image de la formule, choisir de l'ancrer comme un caractère. A quoi cela sert-il ?</h4>
             <p>
                     Cela permet d'insérer l'image dans un paragraphe.
             </p>
+        </div>
+        <h2 id="documents">Documents</h2>
+        <p>
+            Vous trouverez ci-dessous tous les documents réalisés durant ce TP :
+            <ul>
+                <li><a href="exemples_tp3.odt">exemples_tp3.odt</a></li>
+                <li><a href="texte.odt">teste.odt</a></li>
+                <li><a href="texte.pdf">texte.pdf</a></li>
+                <li><a href="texte.tex">texte.tex</a></li>
+            </ul>
+        </p>
     </div>
 </body>
 </html>
