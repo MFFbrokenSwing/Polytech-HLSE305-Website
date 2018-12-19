@@ -2,16 +2,23 @@
 @import 'core';
 
 #main {
+
     h2
     {
         font-size: 3em;
         .underscore-before();
     }
+
     h3
     {
         font-size: 2em;
         color: red;
         .underscore-before();
+    }
+
+    a
+    {
+        color: inherit;
     }
 }
 
@@ -34,4 +41,27 @@ body
     background-size: 250px;
     background-color: @main-bg-color;
     font-family: 'Ubuntu', 'Times New Roman', Times, serif
+}
+
+legend
+{
+    font-style: italic;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+kbd
+{
+    background-color: black;
+    color: white;
+    border: solid black;
+    border-radius : 4px 4px 4px 4px;
+    font-size: 15px;
+}
+
+.git-logo
+{
+    float: left;
+    width: 200px;
+    margin-right: 2em;
 }

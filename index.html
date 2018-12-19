@@ -12,8 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
 
     <!-- Highlight JS script and style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/androidstudio.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="css/androidstudio.css">
+    <script src="js/highlight.pack.js"></script>
 
     <title>Page Title</title>
 </head>
@@ -40,81 +40,232 @@
         <aside id="submenu">
             <!-- Filled with JavaScript -->
         </aside>
-        <h1>HLSE305</h1>
-        <h2 id="tp1">TP1</h2>
-        <h3 id="tp1-part1">Partie 1</h3>
+        <h1>HLSE305 - Restitution du travail fait en TP</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend vulputate elit vitae gravida. 
-            Pellentesque lacinia finibus varius. Nulla vehicula, dui vel interdum congue, magna nibh accumsan sem, 
-            vitae efficitur tellus erat sed nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-            per inceptos himenaeos. Vestibulum sed justo ultrices, tristique sapien elementum, posuere tellus. 
-            Cras neque risus, varius sit amet iaculis eget, vehicula ut magna. Ut eu aliquet ante, at varius tortor. 
-            Vestibulum ullamcorper feugiat orci at congue. In et enim arcu. Fusce eu ultricies nisi. Sed venenatis urna sit amet 
-            rhoncus pretium. Pellentesque in tellus ac purus vehicula tincidunt. 
+            Cette page permet d'expliquer comment utiliser le site au cas où vous auriez des problèmes, mais permet aussi 
+            d'expliquer quelles ont été les technologies utilisées pour la réalisation de ce site car, en effet, plusieurs outils
+            bien utiles m'ont aidé.
         </p>
+        <h2 id="naviguer">Naviguer</h2>
+        <h3>Naviguer entre les pages</h3>
+        <p>
+            Afin de naviguer aisément sur le site, il suffit de glisser sa souris à gauche de l'écran (là où se trouvent les
+            flèches), pour faire apparaître les différents TPs faits durant ce semestre. <br/>
+            Survoler un de ces titres permet de faire dérouler à son tour tous les documents réalisés durant celui-ci.
+        </p>
+        <h3>Naviguer dans la page</h3>
+        <p>
+            Le sous-menu est celui qui est présent lorsque que vous ne mettez pas votre souris à gauche de l'écran, il permet de 
+            naviguer vers les différents chapitres composants chaque pages. De plus, le chapitre que vous êtes actuellement en 
+            train de parcourir se met en évidence afin que vous ne vous perdiez jamais.
+        </p>
+
+        <h3>Structure du site</h3>
+        <p>
+            La structure du site est de la forme suivante :
+            <ul>
+                <li>TP 14</li>
+                <ul>
+                    <li>css</li>
+                    <ul>
+                        <li>fichier.css</li>
+                    </ul>
+                    <li>fichier.html</li>
+                    <li>document_response.pdf</li>
+                    <li>second_fichier.html</li>
+                </ul>
+                <li>TP 92</li>
+                <ul>
+                    <li>diapo.odp</li>
+                </ul>
+                <li>TP 12</li>
+                <ul>
+                    <li>doc.tex</li>
+                    <li>presentation.pdf</li>
+                </ul>
+            </ul>
+            C'est à dire que chaque TP réalisé tout au long du semestre possède son propre dossier dans lequel on peut 
+            retrouver chaque document s'y rattachant.
+        </p>
+
+        <h2 id="git">Git</h2>
+        <h3>Qu'est-ce que Git ?</h3>
+        <p>
+            <img src="img/git-logo.png" alt="Logo de Git" class="git-logo">
+            Git est un gestionnaire de version très connu et énormément utilisé dans le domaine de la programmation. Il permet de 
+            gérer les modification de son code en donnant à chacune d'elles un numéro de version.<br />
+            De plus, il permet de créer ce que l'on appelle des branches afin de travailler à plusieurs sur le même code sans pour 
+            autant se géner l'un et l'autre, il suffit juste d'effectuer une action appelée <kbd>merge</kbd> (fusionner en français) 
+            afin de regrouper les deux codes écrits par l'un et par l'autre. Pour une documention complète je vous conseille de 
+            renseigner sur <a href="https://git-scm.com/docs">ce site</a>.
+        </p>
+
+        <h3>Ce site est en ligne !</h3>
+        <p>
+                Ce projet est possède justement un dépôt Git en ligne que vous pouvez consulter à 
+                <a href="https://github.com/MFFbrokenSwing/Polytech-HLSE305-Website">cette adresse</a>, vous pourrez ainsi voir 
+                l'évolution du code au travers du temps et comprendre plus facilement l'architecture du site. De plus ce dépôt 
+                possède une page GitHub permettant donc de 
+                <a href="https://mffbrokenswing.github.io/Polytech-HLSE305-Website/">voir ce site depuis n'importe où</a> grâce 
+                à une connexion internet.
+        </p>
+
+        <h2 id="less">Less</h2>
+
+        <h3>Qu'est-ce que le Less</h3>
+        <p>
+            Le Less est un langage se rapprochant beaucoup du css, en effet celui-ci se veut être un clone du css avec une synthaxe
+            plus souple et surtout possédant des fonctionnalité supplémentaire. Si vous voulez vous renseigner sur le Less, n'hésitez
+            pas à consulter <a href="http://lesscss.org/">la documentation de ce dernier</a>.<br />
+            Ci-dessous je vous présente quelques une des fonctionnalités que le Less propose, en espérant que vous réfléchirez 
+            à l'adopter pour vos future projet car celui-ci permet une meilleur organisation de fichiers et une synthaxe bien 
+            plus claire.<br />
+            Pour résumer, le Less est tout simplement une amélioration du CSS qui se transpile en CSS.
+        </p>
+
+        <h3>Les classes imbriquées</h3>
+        <p>
+            Les classes imbriqués permettent de simplifer grandement la synthaxe mais rendre le code beaucoup plus clair. Pour 
+            démontrer la puissance de cette fonctionnalité je vais présenter deux code qui donnent le même résultat, l'un sera 
+            en css, l'autre utilisera le Less.
+        </p>
+
+        <legend>fichier.css</legend>
         <pre>
-            <code class="JSON">
+            <code class="css">
+p
 {
-    "Moi": "toi",
-    "Lui": [
-        "Nous",
-        "Vous",
-        "Eux"
-    ],
-    "Quoi ?": false,
-    "Nombre" : 5
+    background-color: blue;
+}
+
+p:hover
+{
+    background-color: red;
+}
+
+p a
+{
+    text-decoration: none;
+}
+
+p a:hover
+{
+    text-decoration: underline;
 }
             </code>
         </pre>
+        <legend>fichier.less</legend>
         <pre>
-            <code class="Java">
-public static int foo(int bar)
+            <code class="less">
+p
 {
-    return bar;
+    background-color: blue;
+
+    &:hover
+    {
+        background-color: red;
+    }
+
+    a
+    {
+        text-decoration: none;
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+
 }
             </code>
         </pre>
-        <h3 id="tp1-part2">Partie 2</h3>
+
         <p>
-            Cras id sodales purus. Suspendisse quis varius augue. Fusce eget sodales nisl. Curabitur tempus imperdiet nibh quis 
-            condimentum. Vivamus molestie ut risus id pulvinar. Duis rutrum quis elit vel tincidunt. Ut et velit sagittis, semper 
-            ante tristique, pellentesque nulla. Vestibulum mattis at nulla in mollis. Pellentesque ut convallis enim. Nunc 
-            rhoncus dui a libero pretium varius. 
+            Comme nous pouvons le voir <kbd>&</kbd> fait référence à l'élément actuel, cela permet d'éviter de séparer des styles 
+            s'appliquants sur un seul et même élément. De même, on peut voir qu'il est plus simple de suivre la hiérarchie des styles
+            avec le Less bien qu'ici l'exemple soit vraiment simple. Ici l'utilisation du Less ne permet pas de réduire le nombre 
+            de lignes écrites, cependant nous verrons plus loin comment certaines fonctionnalités permettent d'obtenir un code plus 
+            court. 
         </p>
-        <h2 id="tp2">TP2</h2>
-        <h3 id="tp2-part1">Partie 1</h3>
+
+        <h3>Les variables</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend vulputate elit vitae gravida. 
-            Pellentesque lacinia finibus varius. Nulla vehicula, dui vel interdum congue, magna nibh accumsan sem, 
-            vitae efficitur tellus erat sed nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-            per inceptos himenaeos. Vestibulum sed justo ultrices, tristique sapien elementum, posuere tellus. 
-            Cras neque risus, varius sit amet iaculis eget, vehicula ut magna. Ut eu aliquet ante, at varius tortor. 
-            Vestibulum ullamcorper feugiat orci at congue. In et enim arcu. Fusce eu ultricies nisi. Sed venenatis urna sit amet 
-            rhoncus pretium. Pellentesque in tellus ac purus vehicula tincidunt. 
+            Less permet l'ajout de variables dans notre feuille de style, cela peut être très utile lorsque nous voulons utiliser 
+            une même valeur à plusieurs endroits dans notre fichier. En effet, si nous venons un jour à modifier cette valeur nous 
+            n'aurons pas besoin de chercher de partout où nous l'avous utilisé car celle-ci sera une variable.<br />
+            De plus nous avons la possibilité de faire des calcules avec ces variables (additions, soustractions, etc ...). <br/>
+            Ici encore, je vais donner un exemple de ce que pourrait donner un code CSS converti en Less.
         </p>
-        <h3 id="tp2-part2">Partie 2</h3>
+
+        <legend>fichier.css</legend>
+        <pre>
+            <code class="css">
+p strong
+{
+    color: red;
+    background-color: blue; /* Doit être la couleur du texte du paragraphe */
+}
+p
+{
+    color: blue; /* Couleur du texte du paragraphe */
+    background-color: orange;
+}
+            </code>
+        </pre>
+
+        <legend>fichier.less</legend>
+        <pre>
+            <code class="less">
+@paragraph-text-color: blue;
+
+p
+{
+    color: @paragraph-text-color;
+    background-color: orange;
+
+    strong
+    {
+        color: red;
+        background-color: @paragraph-text-color;
+    }
+}
+            </code>
+        </pre>
         <p>
-            Cras id sodales purus. Suspendisse quis varius augue. Fusce eget sodales nisl. Curabitur tempus imperdiet nibh quis 
-            condimentum. Vivamus molestie ut risus id pulvinar. Duis rutrum quis elit vel tincidunt. Ut et velit sagittis, semper 
-            ante tristique, pellentesque nulla. Vestibulum mattis at nulla in mollis. Pellentesque ut convallis enim. Nunc 
-            rhoncus dui a libero pretium varius. 
+            Ici il suffit de changer la valeur de la variable que nous avons défini grâce au prefix <kbd>@</kbd> afin de changer 
+            la couleur correspondante tout en gardant les contraintes voulues. Plus besoin de relire tout le code pour chercher 
+            où l'attribut doit être changé.<br />
+            Nous allons nous arrêter ici pour le Less, mais n'hésitez surtout pas à faire un tour du côté de la documention pour 
+            découvrir toutes les fonctionnalités proposées.
         </p>
-        <h3 id="tp2-part3">Partie 3</h3>
+
+        <h2 id="javascript">JavaScript</h2>
+        <h3>Introduction</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend vulputate elit vitae gravida. 
-            Pellentesque lacinia finibus varius. Nulla vehicula, dui vel interdum congue, magna nibh accumsan sem, 
-            vitae efficitur tellus erat sed nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-            per inceptos himenaeos. Vestibulum sed justo ultrices, tristique sapien elementum, posuere tellus. 
-            Cras neque risus, varius sit amet iaculis eget, vehicula ut magna. Ut eu aliquet ante, at varius tortor. 
-            Vestibulum ullamcorper feugiat orci at congue. In et enim arcu. Fusce eu ultricies nisi. Sed venenatis urna sit amet 
-            rhoncus pretium. Pellentesque in tellus ac purus vehicula tincidunt. 
+            Le JavaScript permet de dynamiser un site, on l'utilise pour animer (lorsque le css ne nous permet pas le faire) mais 
+            aussi pour ajoter dynamiquement du contenu au site ou encore bien d'autres choses. Sur ce site j'utilise le JavaScript 
+            pour remplir le sous-menu, je cherche en premier lieu tous les titre <kbd>h2</kbd> se trouvant sur la page puis ajoute 
+            un lien vers ces derniers dans le sous-menu.
+            Nous allons voir que le JavaScript est un élément central des sites web de nos jours.
         </p>
-        <h3 id="tp2-part4">Partie 4</h3>
+
+        <h3>Les Frameworks et les dérivés du langage</h3>
         <p>
-            Cras id sodales purus. Suspendisse quis varius augue. Fusce eget sodales nisl. Curabitur tempus imperdiet nibh quis 
-            condimentum. Vivamus molestie ut risus id pulvinar. Duis rutrum quis elit vel tincidunt. Ut et velit sagittis, semper 
-            ante tristique, pellentesque nulla. Vestibulum mattis at nulla in mollis. Pellentesque ut convallis enim. Nunc 
-            rhoncus dui a libero pretium varius. 
+            Il existe différens frameworks JavaScript, très connus, tels que AngularJS, Ajax et bien d'autres. Ils permettent de 
+            manipuler les éléments de la page web plus facilement mais aussi ajoutent des fonctionnalités permettants de communiquer 
+            avec le serveur web de manière efficace.<br />
+            Certains langages ont aussi dérivés sur JavaScript tels que TypeScript, PureScript, etc ... ils permettent par exemple 
+            d'avoir un langage fortement typé, une synthaxe plus courtes.<br />
+            Je vous met ci-dessous une petite conférence faite lors de Devoxx 2015 (oui, c'est vieux) qui explique plus que correctement 
+            les concepts de JavaScript.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PSeU1IJztkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <p>
+            Si vous avez regardé la conférence, JavaScript ne devrait plus avoir de secrets pour vous !<br />
+            Comme vous avez pu le voir plus haut dans la partie sur le Less, j'utilise un script JavaScript pour la coloration 
+            synthaxique du code, ce dernier est très connu et s'appelle <a href="https://highlightjs.org/">highlightjs</a>.
         </p>
 
         <footer>
