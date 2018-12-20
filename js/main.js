@@ -25,6 +25,23 @@ window.addEventListener('load', function(e) {
         });
         nav.appendChild(link);
     });
+
+    // Listens clicks on category titles in the nav
+    categories = document.querySelectorAll('.category');
+    categories.forEach(cat => {
+        let link = cat.children[0];
+        link.addEventListener('click', ev => {
+            ev.preventDefault();
+            if(cat.hasAttribute('data-opened') && cat.getAttribute('data-opened') === "true")
+            {
+                cat.setAttribute('data-opened', false);
+            }
+            else
+            {
+                cat.setAttribute('data-opened', true);
+            }
+        });
+    });
 });
 
 /**

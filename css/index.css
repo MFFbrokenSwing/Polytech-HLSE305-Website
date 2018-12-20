@@ -119,11 +119,11 @@
 .category .cat-content a div {
   color: #993300;
 }
-.category:hover .cat-title:before {
+.category[data-opened=true] .cat-title:before {
   content: '\f13a';
   font-family: 'fontello';
 }
-.category:hover .cat-content {
+.category[data-opened=true] .cat-content {
   max-height: 500px;
   display: block;
 }
